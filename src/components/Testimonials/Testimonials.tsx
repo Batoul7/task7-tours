@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 
 import Image from 'next/image';
-import quote from '@/assets/svg/Asset 16 1.svg'
+import quote from '/public/assets/svg/Asset 16 1.svg'
 import { TestimonialData } from '@/Data/TestimonialData';
 
 

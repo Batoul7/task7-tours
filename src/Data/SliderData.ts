@@ -1,7 +1,7 @@
-import CardImg1 from '@/assets/imgs/cardimg1.png'
-import CardImg2 from '@/assets/imgs/cardimg2.png'
-import CardImg3 from '@/assets/imgs/cardimg3.png'
-import CardImg4 from '@/assets/imgs/cardimg4.png'
+import CardImg1 from '/public/assets/imgs/cardimg1.png'
+import CardImg2 from '/public/assets/imgs/cardimg2.png'
+import CardImg3 from '/public/assets/imgs/cardimg3.png'
+import CardImg4 from '/public/assets/imgs/cardimg4.png'
 
 
 export const SliderData = [

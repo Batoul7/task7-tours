@@ -1,7 +1,7 @@
-import servImg1 from '@/assets/imgs/serv1.png'
-import servImg2 from '@/assets/imgs/serv2.png'
-import servImg3 from '@/assets/imgs/serv3.png'
-import servImg4 from '@/assets/imgs/serv4.png'
+import servImg1 from '/public/assets/imgs/serv1.png'
+import servImg2 from '/public/assets/imgs/serv2.png'
+import servImg3 from '/public/assets/imgs/serv3.png'
+import servImg4 from '/public/assets/imgs/serv4.png'
 
 export const CardInfo = [
     {

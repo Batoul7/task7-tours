@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImg from '@/assets/imgs/logo.png'
+import logoImg from '/public/assets/imgs/logo.png'
 import Image from 'next/image';
 import Link from 'next/link';
 import { contactsData, servicesData } from '@/Data/FooterData';

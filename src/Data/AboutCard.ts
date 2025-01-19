@@ -1,7 +1,7 @@
-import AboutIcon1 from '@/assets/about icons/icon_map.png'
-import AboutIcon2 from '@/assets/about icons/icon_guide.png'
-import AboutIcon3 from '@/assets/about icons/icon_experience.png'
-import AboutIcon4 from '@/assets/about icons/icon_best price.png'
+import AboutIcon1 from '/public/assets/about icons/icon_map.png'
+import AboutIcon2 from '/public/assets/about icons/icon_guide.png'
+import AboutIcon3 from '/public/assets/about icons/icon_experience.png'
+import AboutIcon4 from '/public/assets/about icons/icon_best price.png'
 
 export  const AboutCardData =[
     {

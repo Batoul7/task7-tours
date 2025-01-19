@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import bikeImg from '@/assets/imgs/bike picture.png'
+import bikeImg from '/public/assets/imgs/bike picture.png'
 import MyButton from '../MyButton/MyButton'
 
 export default function Booking() {

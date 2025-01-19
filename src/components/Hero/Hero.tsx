@@ -1,12 +1,12 @@
 'use client';
 import { useState } from 'react'
-import numberPeople from '@/assets/svg/icon_private.svg'
-import calendar from '@/assets/svg/system-uicons_calendar-month.svg'
-import time from '@/assets/svg/system-uicons_clock.svg'
-import tour from '@/assets/svg/icon_tour.svg'
-import car from '@/assets/svg/icon_car.svg'
+import numberPeople from '/public/assets/svg/icon_private.svg'
+import calendar from '/public/assets/svg/system-uicons_calendar-month.svg'
+import time from '/public/assets/svg/system-uicons_clock.svg'
+import tour from '/public/assets/svg/icon_tour.svg'
+import car from '/public/assets/svg/icon_car.svg'
 import Image from 'next/image';
-import search from '@/assets/svg/akar-icons_search.svg'
+import search from '/public/assets/svg/akar-icons_search.svg'
 import InputSection from './InputSection';
 
 interface HeroProps {

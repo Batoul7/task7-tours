@@ -1,4 +1,4 @@
-import person from '@/assets/imgs/Ellipse 4.png';
+import person from '/public/assets/imgs/Ellipse 4.png';
 
 interface Testimonial {
     name: string;

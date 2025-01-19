@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import { Open_Sans as OpenSansFont } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar/NavBar";
-import logoImg from '@/assets/imgs/logo.png'
+import logoImg from '/public/assets/imgs/logo.png'
 import Footer from "@/components/Footer/Footer";
 
 const podcast = localFont({

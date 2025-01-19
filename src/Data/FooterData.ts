@@ -1,6 +1,6 @@
-import LocationImg from '@/assets/imgs/ci_location.png'
-import EmailImg from '@/assets/imgs/fluent_mail-16-filled.png'
-import PhoneImg from '@/assets/imgs/clarity_phone-handset-solid.png'
+import LocationImg from '/public/assets/imgs/ci_location.png'
+import EmailImg from '/public/assets/imgs/fluent_mail-16-filled.png'
+import PhoneImg from '/public/assets/imgs/clarity_phone-handset-solid.png'
 
 export const servicesData = [
     "Bike and Rickshaw rental",

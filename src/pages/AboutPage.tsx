@@ -1,6 +1,6 @@
 import Hero from '@/components/Hero/Hero';
 import Welcome from '@/components/Welcome/Welcome';
-import welcomeImg2 from '@/assets/imgs/welcome2.png'
+import welcomeImg2 from '/public/assets/imgs/welcome2.png'
 import AboutCard from '@/components/AboutCard/AboutCard';
 import Testimonials from '@/components/Testimonials/Testimonials';
 

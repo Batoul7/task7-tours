@@ -1,5 +1,5 @@
 import React from 'react';
-import GoogleImg from '@/assets/imgs/grommet-icons_google.png'
+import GoogleImg from '/public/assets/imgs/grommet-icons_google.png'
 import Image from 'next/image';
 
 interface BtnName {

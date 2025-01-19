@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import offersImg from '@/assets/imgs/offers.png'
+import offersImg from '/public/assets/imgs/offers.png'
 import MyButton from '../MyButton/MyButton'
 
 export default function Offers() {
