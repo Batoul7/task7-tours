@@ -10,8 +10,8 @@ interface SliderCardProps{
 };
 
 const SliderCard = ({ title, price, day, people,description, image }: SliderCardProps) => (
-  <div className="flex flex-col gap-4 w-[330px] ">
-    <Image src={image} alt={title} width={330} height={40} className=" rounded-3xl" />
+  <div className="flex flex-col gap-4 w-full ">
+    <Image src={image} alt={title} width={330} height={40} className="w-full rounded-3xl" />
     <div className='flex flex-col gap-3 px-[5px]'>
     <h3 className="text-2xl font-bold text-mygray">{title}</h3>
     <p className="text-mygray text-lg font-semibold">from <span className='text-2xl text-myprimary font-extrabold'>{price}€</span></p>

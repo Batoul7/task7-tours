@@ -7,7 +7,7 @@ export default function Booking() {
   return (
     <section id='contact' className='relative bg-booking bg-cover 
     bg-center h-auto xl:h-[648px] py-8 xl:py-15 mb-10 px-10 mylg:px-40 3xl:px-63'>
-            <h2 className="text-32 font-extrabold mb-9 text-center 3xl:text-start">Book Now Bike</h2>
+            <h2 className="text-2xl lg:text-32 font-extrabold mb-9 text-center 3xl:text-start">Book Now Bike</h2>
             <div className="w-full 3xl:w-[734px] py-4 lg:py-7.5 px-4 lg:px-[34px] bg-bgbox rounded-3xl mx-auto 3xl:mx-0">
                 <form className=" flex flex-wrap gap-3 lg:gap-7.5 justify-center">
                     <div className="flex flex-wrap justify-center gap-3 lg:gap-7.5">

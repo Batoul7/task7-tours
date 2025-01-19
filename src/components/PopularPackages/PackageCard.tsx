@@ -12,8 +12,8 @@ interface PackageCardProps {
 
 const PackageCard = ({ image, title, price, period, packIcon, details }: PackageCardProps) => {
   return (
-    <div className="w-[340px] border border-[#EFEFEF] rounded-3xl hover:shadow-packageshadow">
-      <Image src={image} alt={title} width={340} height={340} />
+    <div className="w-full border border-[#EFEFEF] rounded-3xl hover:shadow-packageshadow">
+      <Image src={image} alt={title} width={340} height={340} className='w-full' />
       <div className='p-[25px]'>
         <h3 className="text-xl font-extrabold text-mygray mb-4">{title}</h3>
         <div className="relative flex gap-[6.72px] mb-4 items-baseline ps-[18.72px]">

@@ -86,7 +86,7 @@ useEffect(() => {
      ${scrolled ? 'bg-[#FECEA3] text-mygray shadow-md shadow-gray-500/20' : 'bg-mywhite text-white'}`}>
         <Image
           src={logo} 
-          alt='logo' width={133} height={130} className='scale-75 md:scale-90 xl:scale-100'/>
+          alt='logo' width={133} height={130} className='h-20 w-20 lg:h-28 lg:w-28 scale-75 md:scale-90 xl:scale-100'/>
         <div className='hidden lg:flex justify-between items-center'>
           <NavItems items={navItems}  />
         </div>
@@ -127,7 +127,8 @@ useEffect(() => {
          
         <button className='lg:hidden'
         onClick={() => setActive(prev => !prev)}>
-          <svg width="50" height="50" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+          className='h-9 w-9'>
             <g clipPath="url(#clip0_1342_1605)">
             <path d="M26.7333 14.667H5.26667C4.56711 14.667 4 15.2341 4 15.9337V16.067C4 16.7666 4.56711 17.3337 5.26667 17.3337H26.7333C27.4329 17.3337 28 16.7666 28 16.067V15.9337C28 15.2341 27.4329 14.667 26.7333 14.667Z" fill="#FA8B02"/>
             <path d="M26.7333 21.333H5.26667C4.56711 21.333 4 21.9001 4 22.5997V22.733C4 23.4326 4.56711 23.9997 5.26667 23.9997H26.7333C27.4329 23.9997 28 23.4326 28 22.733V22.5997C28 21.9001 27.4329 21.333 26.7333 21.333Z" fill="#FA8B02"/>

@@ -1,78 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 import SliderCard from './SliderCard';
-import CardImg1 from '@/assets/imgs/cardimg1.png'
-import CardImg2 from '@/assets/imgs/cardimg2.png'
-import CardImg3 from '@/assets/imgs/cardimg3.png'
-import CardImg4 from '@/assets/imgs/cardimg4.png'
+import { SliderData } from '@/Data/SliderData';
 
-
-const data = [
-  {
-    title: 'Lucca Bike Tour',
-    price: "34",
-    day:"EVERY DAY",
-    people:"3-10 PP",
-    description: 'A tour of the city and its surroundings led by a professional guide ...',
-    image: CardImg1.src ,
-  },
-  {
-    title: 'Wine tasting In Tuscany',
-    price: "34",
-    day:"MONDAY",
-    people:"10-30 PP",
-    description: 'The real magic is here where you can enjoy the best Tuscan wine and eat ...',
-    image: CardImg2.src,
-  },
-  {
-    title: 'Cinque Terre Tour',
-    price: "34",
-    day:"TO BE DECIDED",
-    people:"10-50 PP",
-    description: 'Visiting the 5 Terre is a must, and you can never go there enough ...',
-    image: CardImg3.src,
-  },
-  {
-    title: 'Siena and Surroundings',
-    price: "34",
-    day:"TO BE DECIDED",
-    people:"5-10 PP",
-    description: 'Visit the beautiful Siena and the cities that surround it to experience ...',
-    image: CardImg4.src,
-  },
-  {
-    title: 'Lucca Bike Tour',
-    price: "34",
-    day:"EVERY DAY",
-    people:"3-10 PP",
-    description: 'A tour of the city and its surroundings led by a professional guide ...',
-    image: CardImg1.src ,
-  },
-  {
-    title: 'Wine tasting In Tuscany',
-    price: "34",
-    day:"MONDAY",
-    people:"10-30 PP",
-    description: 'The real magic is here where you can enjoy the best Tuscan wine and eat ...',
-    image: CardImg2.src,
-  },
-  {
-    title: 'Cinque Terre Tour',
-    price: "34",
-    day:"TO BE DECIDED",
-    people:"10-50 PP",
-    description: 'Visiting the 5 Terre is a must, and you can never go there enough ...',
-    image: CardImg3.src,
-  },
-  {
-    title: 'Siena and Surroundings',
-    price: "34",
-    day:"TO BE DECIDED",
-    people:"5-10 PP",
-    description: 'Visit the beautiful Siena and the cities that surround it to experience ...',
-    image: CardImg4.src,
-  },
-];
 
 const Slider= () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -96,7 +26,7 @@ const Slider= () => {
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => {
-        if (prevIndex === data.length - 1) {
+        if (prevIndex === SliderData.length - 1) {
             return 0; 
         }
         return prevIndex + 1; 
@@ -106,7 +36,7 @@ const Slider= () => {
 const handlePrev = () => {
     setCurrentIndex((prevIndex) => {
         if (prevIndex === 0) {
-            return data.length - 1; 
+            return SliderData.length - 1; 
         }
         return prevIndex - 1;
     });
@@ -128,9 +58,9 @@ const handlePrev = () => {
               </button>
               <button
               onClick={handleNext}
-              disabled={currentIndex === data.length - 1} 
+              disabled={currentIndex === SliderData.length - 1} 
               className={` w-[50px] h-[50px] flex justify-center items-center z-10 bg-[#EFEFEF] hover:bg-myprimary 
-                rounded-full ${currentIndex === data.length - 1  ? 'opacity-60 cursor-not-allowed':''}`} >
+                rounded-full ${currentIndex === SliderData.length - 1  ? 'opacity-60 cursor-not-allowed':''}`} >
               <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.5 1L8.5 8L1.5 15"  stroke='#333333' strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
@@ -142,11 +72,11 @@ const handlePrev = () => {
             className="flex gap-8 transition-transform duration-500 ease-in-out"   
             style={{
               transform: `translateX(-${currentIndex * (100 / visibleCards)}%)`,
-              width: `${(data.length * 100) / visibleCards}%`,
+              width: `${(SliderData.length * 100) / visibleCards}%`,
             }}
           >
-            {data.map((item, index) => (
-              <div key={index} className="w-[330px]" 
+            {SliderData.map((item, index) => (
+              <div key={index} className="w-full" 
               style={{ flexBasis: `${100 / visibleCards}%` }}
               >
                 <SliderCard {...item} />

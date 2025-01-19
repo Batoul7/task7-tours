@@ -1,39 +1,12 @@
 import React from 'react';
 import logoImg from '@/assets/imgs/logo.png'
 import Image from 'next/image';
-import LocationImg from '@/assets/imgs/ci_location.png'
-import EmailImg from '@/assets/imgs/fluent_mail-16-filled.png'
-import PhoneImg from '@/assets/imgs/clarity_phone-handset-solid.png'
 import Link from 'next/link';
+import { contactsData, servicesData } from '@/Data/FooterData';
 
 
 const Footer: React.FC = () => {
-  const services = [
-    "Bike and Rickshaw rental",
-    "Guided Tours of Lucca", 
-    "Guided Bike Tour of Lucca", 
-    "Trip In The Tuscan Hills",
-    "Transportation With Luxury Cars", 
-    "Wine Tours By Bus With Guide"
-  ]
-
-  const contacts = [
-    {
-      image:LocationImg.src,
-      alt:'location',
-      text:"Piazza Napoleone, Lucca, Tuscany"
-    },
-    {
-      image:PhoneImg.src,
-      alt:'phone',
-      text:"+39 346 368 5708"
-    },
-    {
-      image:EmailImg.src,
-      alt:'email',
-      text:"italianlimo@gmail.com"
-    },
-  ]
+ 
   return (
     <footer className="bg-mygray text-white py-10 px-10 mylg:px-40 3xl:px-63">
       <div className="flex flex-col">
@@ -45,7 +18,7 @@ const Footer: React.FC = () => {
             <div >
               <h3 className="text-xl font-extrabold mb-5">Services</h3>
               <ul className="text-lg font-semibold flex flex-col gap-3.5">
-              {services.map((item,index)=> {
+              {servicesData.map((item,index)=> {
                 return (
                   <li key={index}>{item}</li>
                 )
@@ -76,7 +49,7 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="text-xl font-extrabold mb-5">Contacts</h3>
               <ul className="text-lg font-semibold flex flex-col gap-3.5">
-                {contacts.map((item,index)=> {
+                {contactsData.map((item,index)=> {
                   return (
                     <li key={index} className="flex items-center gap-3.5">
                       <Image src={item.image} alt={item.alt} width={24} height={24}/>
